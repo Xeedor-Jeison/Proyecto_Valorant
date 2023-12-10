@@ -1,0 +1,22 @@
+.prueba{
+    /* background-image:url( "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/background.png"); */
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    position: absolute;
+    margin-top: -170px;
+    opacity: .2;
+}
+.global{
+    overflow-y: scroll;
+}
+.prueba2{
+    top: 10px;
+}
+.alto{
+    height: 900px;
+}
+
+.ensayo{
+    max-width: 100%;
+}
