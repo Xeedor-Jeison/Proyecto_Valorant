@@ -15,7 +15,7 @@
 
 <body>
     <!-- <<<<<<<<<<<<<<<<<<<<< barra inicial<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>> -->
-    <div class="fondo-bg ">
+    <div class="fondo-bg position-sticky top-0">
         <nav class="navbar">
             <div class="d-flex align-items-center">
 
@@ -37,8 +37,8 @@
     <!-- <<<<<<<<<<<<<<<<<sidebar - barra lateral>>>>>>> -->
 
 
-    
-    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
         aria-controls="offcanvasExample">
       
     </button>
@@ -65,122 +65,33 @@
                 </ul>
             </div>
         </div>
-    </div> -->
- <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<checkbox>>>>>>>>>>>>>>>>>>>>>>>>< -->
+    </div>
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<checkbox>>>>>>>>>>>>>>>>>>>>>>>>< -->
 
     <div class="checkbox d-flex">
         <div class="form-check form-switch d-flex   ">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
             <label class="form-check-label" for="flexSwitchCheckDefault">jugadores</label>
-          </div>
-          <div class="form-check form-switch">
+        </div>
+        <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
             <label class="form-check-label" for="flexSwitchCheckChecked">maps</label>
-          </div>
-         
-        </div>  
+        </div>
+
+    </div>
 
 
     <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards players>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-    <section class="seccionCartas  m-5 d-flex justify-content-center align-items-center flex-wrap  ">
+    <section id="cardAgents" class="seccionCartas d-none  m-5 d-flex justify-content-center align-items-center flex-wrap">
         <div class="card m-3 ">
-            <div class="face Front">
-
-                <img class="imagenPruebaCards" src="./imagenes/imagenPruebaValorant.jpeg" alt="imagen Valorant">
-                <h3>Sage </h3>
-
-            </div>
-            <div class="face Back">
-                <h3>Sage</h3>
-
-                <p>proporciona seguridad para su equipo en cualquier lugar. Gracias a su capacidad de
-                    revivir a sus compañeros caídos .</p>
-                <div class="linkSage">
-                    <a href="#">Details</a>
-
-                </div>
-            </div>
+            
         </div>
-        <div class="card m-3">
-            <div class="face Front">
 
-                <img class="imagenPruebaCards" src="./imagenes/iso valorant.jpg" alt="imagen Valorant">
-                <h3>Iso</h3>
-
-            </div>
-            <div class="face Back">
-                <h3>Iso</h3>
-
-                <p>proporciona seguridad para su equipo en cualquier lugar. Gracias a su capacidad de
-                    revivir a sus compañeros caídos .</p>
-                <div class="linkSage">
-                    <a href="#">Details</a>
-
-                </div>
-            </div>
-        </div>
-        <div class="card m-3">
-            <div class="face Front">
-
-                <img class="imagenPruebaCards" src="./imagenes/logo Valorant.jpg" alt="imagen Valorant">
-                <h3>Logo </h3>
-
-            </div>
-            <div class="face Back">
-                <h3>Logo</h3>
-
-                <p>proporciona seguridad para su equipo en cualquier lugar. Gracias a su capacidad de
-                    revivir a sus compañeros caídos .</p>
-                <div class="linkSage">
-                    <a href="#">Details</a>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="card m-3">
-            <div class="face Front">
-
-                <img class="imagenPruebaCards" src="./imagenes/killjoy.jpg" alt="imagen Valorant">
-                <h3>Killjoy </h3>
-
-            </div>
-            <div class="face Back">
-                <h3>Killjoy</h3>
-
-                <p>proporciona seguridad para su equipo en cualquier lugar. Gracias a su capacidad de
-                    revivir a sus compañeros caídos .</p>
-                <div class="linkSage">
-                    <a href="#">Details</a>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="card m-3">
-            <div class="face Front">
-
-                <img class="imagenPruebaCards" src="./imagenes/jett valorant.jpg" alt="imagen Valorant">
-                <h3>Jett </h3>
-
-            </div>
-            <div class="face Back">
-                <h3>Jett</h3>
-
-                <p>proporciona seguridad para su equipo en cualquier lugar. Gracias a su capacidad de
-                    revivir a sus compañeros caídos .</p>
-                <div class="linkSage">
-                    <a href="#">Details</a>
-
-                </div>
-            </div>
-
-        </div>
     </section>
-   
 
-<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards mapas>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-    <section class="seccionCartas  m-5 d-flex justify-content-center align-items-center flex-wrap  ">
+
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards mapas>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <section class="seccionCartas d-none  m-5 d-flex justify-content-center align-items-center flex-wrap  ">
         <h1 text-center>MAPS</h1>
         <div class="card m-3 ">
             <div class="face Front">
@@ -279,7 +190,7 @@
 
 
 
- <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>scripts<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>scripts<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
     <script src="../Modulos/funciones.js" type="module"></script>
     <script src="../Modulos/variables.js" type="module"></script>
     <script src="../javascript/main.js" type="module"></script>

@@ -1,12 +1,12 @@
  /* .prueba {
- background-image:url( "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/background.png"); 
+ background-image:url( "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/background.png");
   background-size: contain;
   background-position: center;
   height: 200px;
   position: absolute;
   margin-top: -170px;
   opacity: 0.2;/
-} 
+}
 .global{
     overflow-y: scroll;
 }
@@ -21,13 +21,14 @@
     max-width: 100%;
 }*/
 body {
-  
-  background-color: #515384;
-} 
+  background-color: #3D3E59;
+
+}
 
 /* <<<<<<<<<<<<<<<<<<<<<navbar<<<<<<<<<<<<<<< */
 .fondo-bg{
     background-color: #000000;
+    z-index: 100;
 }
 
 
@@ -36,12 +37,13 @@ body {
 
 
 .card {
-   
+
     border: #515384;
   position: relative;
   width: 300px;
   height: 350px;
-  background-color:#515384;
+  background-color: #3D3E59;
+  
 }
 .card .face {
   position: absolute;
@@ -51,10 +53,12 @@ body {
   border-radius: 10px;
   overflow: hidden;
   transition: 1s;
+  background-color: #000;
+ 
 }
 .card .Front {
   transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 5px 10px #000000;
+  box-shadow: 0 5px 10px #000;
 }
 .card .Front img {
   position: absolute;
@@ -69,14 +73,14 @@ body {
   height: 45px;
   line-height: 45px;
   color: crimson;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
 }
 .card .Back {
   transform: perspective(600px) rotateY(180deg);
-  background: #032466;
+  background: #707070;
   padding: 15px;
-  color: #a2a2b7;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -93,7 +97,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     text-align: justify;
-  color: #ff4655;
+  color: #f12;
   text-align: center;
   text-decoration: none;
   font-size: larger;
@@ -112,4 +116,4 @@ body {
 }
 .card:hover .Back {
   transform: perspective(600px) rotateY(360deg);
-} 
+}
