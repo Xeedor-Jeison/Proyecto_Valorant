@@ -37,17 +37,17 @@
 //                 if (array[i] != undefined) {
 //                     let card = document.createElement("div")
 //                     card.classList.add("col-sm-3", "col-md-6", "col-xxl-3", "d-flex")
-//         //             card.innerHTML = `<div
-//         //     class="card  tamañoCard mb-5  ms-2 me-2 shadow-lg bg-body-black rounded border  border-black border-opacity-10 border-5">
+//                     card.innerHTML = `<div
+//             class="card  tamañoCard mb-5  ms-2 me-2 shadow-lg bg-body-black rounded border  border-black border-opacity-10 border-5">
             
-//         //     <img src="${array[i].displayIcon}"
-//         //         class="card-img-top  img-card border border-black border-opacity-10 border-4  "
-//         //         alt=""
-//         //         >
-//         //         <h5 class="card-title mb-3 fw-bold">${array[i].displayName}</h5>
+//             <img src="${array[i].displayIcon}"
+//                 class="card-img-top  img-card border border-black border-opacity-10 border-4  "
+//                 alt=""
+//                 >
+//                 <h5 class="card-title mb-3 fw-bold">${array[i].displayName}</h5>
                
             
-//         // </div>`
+//         </div>`
 
 //         card.innerHTML= `<a class="mb-5" href ="#">
 //         <img class="mb-2" src= "${array[i].displayIcon}">
