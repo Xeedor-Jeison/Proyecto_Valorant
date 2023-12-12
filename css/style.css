@@ -1,25 +1,11 @@
- /* .prueba {
- background-image:url( "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/background.png");
-  background-size: contain;
-  background-position: center;
-  height: 200px;
-  position: absolute;
-  margin-top: -170px;
-  opacity: 0.2;/
-}
-.global{
-    overflow-y: scroll;
-}
-.prueba2{
-    top: 10px;
-}
-.alto{
-    height: 900px;
-}
+ *{
+  margin: 0;
+  padding: 0;
+  
+ }
+ 
+ 
 
-.ensayo{
-    max-width: 100%;
-}*/
  body {
    background-color: #16b199;
    /* background-color: #000; */
@@ -368,4 +354,137 @@
 .btn:hover{
   background: transparent;
   box-shadow: 0 0 20px 5px #00fffc;
+}
+
+ /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<card iconos<<<<<<<<<<<< */
+
+.cardIconosSinLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border: 2px solid #f12;
+  border-radius: 15px;
+  width: 15vw;
+  height: 15vw;
+}
+.imageIconos {
+  width: 10vw;
+  height: 10vw;
+}
+.cardIconosConLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../html/imagenes/fondo\ icono\ valorant.jpg);
+
+  width: 15vw;
+  height: 15vw;
+}
+
+
+.linkIconos {
+  margin: 5px;
+  text-align: center;
+ 
+ 
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<  style video <<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.videoInicio{
+  position: absolute;
+  width: 100%;
+  
+}
+.hero{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.prueba{
+  width: 100%;
+  height: 100%;
+
+}
+.capa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.7;
+  z-index: 50;
+}
+
+.prueba2{
+  top: 100px;
+  left: 150px;
+  z-index: 100;
+}
+
+.prueba3{
+  position: absolute;
+  z-index: 150;
+  color: #fff;
+  top: 380px;
+  left: 150px;
+}
+
+.prueba4{
+  position: absolute;
+  top: 500px;
+  left: 80px;
+  z-index: 200;
+}
+
+@media only screen and (min-width: 359px) and (max-width:769px){
+  .videoInicioRP{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+  }
+  .hero{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  
+  .prueba2RP{
+    top: 100px;
+    left: 150px;
+    z-index: 100;
+  }
+  .prueba2RP img{
+    width: 350px;
+    left: -150px;
+  }
+  .prueba3RP{
+    z-index: 150;
+    color: #fff;
+    top: 380px;
+    left: 150px;
+  }
+.prueba3RP>h2{
+  position: absolute;
+  text-align: center;
+  width: 250px;
+  left: -70px;
+  top: -80px;
+  
+}
+  .prueba4RP{
+    position: absolute;
+    top: 500px;
+    left: 80px;
+    z-index: 200;
+  }
 }
