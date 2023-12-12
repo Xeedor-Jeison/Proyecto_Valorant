@@ -15,9 +15,11 @@
 <!-- <!///////////////////////////body////////////////////////// -->
 
 <body>
-    <header class="position-sticky top-0 z-1">
-        <!-- <<<<<<<<<<<<<<<<<<<<< barra inicial<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>> -->
-        <div class="fondo-bg">
+
+
+    <!-- <header class="position-sticky top-0 z-1"> -->
+    <!-- <<<<<<<<<<<<<<<<<<<<< barra inicial<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>> -->
+    <!-- <div class="fondo-bg">
             <nav class="navbar">
                 <div class="d-flex align-items-center">
 
@@ -35,12 +37,12 @@
                 </div>
 
             </nav>
-        </div>
-        <!-- <<<<<<<<<<<<<<<<<sidebar - barra lateral>>>>>>> -->
+        </div> -->
+    <!-- <<<<<<<<<<<<<<<<<sidebar - barra lateral>>>>>>> -->
 
 
 
-        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
             aria-controls="offcanvasExample">
 
         </button>
@@ -70,23 +72,43 @@
             </div>
         </div> -->
     </header>
+
     <main id="app">
         <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<checkbox>>>>>>>>>>>>>>>>>>>>>>>>< -->
 
-        <div class="checkbox d-flex">
-            <div class="form-check form-switch d-flex   ">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">jugadores</label>
-            </div>
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                <label class="form-check-label" for="flexSwitchCheckChecked">maps</label>
+
+        <!-- <nav class="container navbar navbar-expand-lg bg-withe">
+
+            <div class="container navbar-collapse d-flex justify-content-between pt-2" id="navbarNavDropdown">
+                <div class="form-check form-switch">
+                    <input class="form-check-input border-dark bg-info" type="checkbox" role="switch"
+                        id="flexSwitchCheckChecked1">
+                    <label class="form-check-label" for="flexSwitchCheckChecked1">Jugador</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input border-dark bg-info" type="checkbox" role="switch"
+                        id="flexSwitchCheckChecked2">
+                    <label class="form-check-label" for="flexSwitchCheckChecked2">Jugador</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input border-dark bg-info" type="checkbox" role="switch"
+                        id="flexSwitchCheckChecked3">
+                    <label class="form-check-label" for="flexSwitchCheckChecked3">Jugador</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input border-dark bg-info" type="checkbox" role="switch"
+                        id="flexSwitchCheckChecked4">
+                    <label class="form-check-label" for="flexSwitchCheckChecked4">Jugador</label>
+                </div>
+                <div>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </div>
             </div>
 
         </div>
 
 
-        <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards players>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards players>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
         <section id="cardAgents"
             class="seccionCartas  m-5 d-flex justify-content-center align-items-center flex-wrap">
             <div v-for="agent in agents" class="card m-3 ">
@@ -107,7 +129,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> 
 
 
         <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards mapas>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
@@ -132,7 +154,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> 
 
         <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<otra seccion >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         <h2 text-center>Armas</h2>
@@ -171,6 +193,65 @@
 
         </section> -->
 
+        <!-- <<>>>>>>>>>>>>>>>>>>>>> Iconos de seleccion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <!-- <div class="cardIconosSinLink">
+        <div class="">
+            <img  src="./imagenes/icono radiant valorant.png" class="imageIconos" alt="...">         
+
+        </div>
+    </div> -->
+
+        <!-- >>>>>>>>>>>>>>>>>>> >CARD CON TEXTO EN ICONOS >>>>>>>>>>><<<<<<<<<<<>>>>>< -->
+        <!-- <div class="prueba  position-relative d-flex justify-content-center align-items-start">
+            <img class="position-absolute z-1" src="./imagenes/logoSinFondo.png" alt="">
+        </div> -->
+        
+        <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards players>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <div id="cardAgents"
+            class="seccionCartas  d-none m-5 d-flex justify-content-center align-items-center flex-wrap">
+            <div class="card m-3 ">
+
+            </div>
+
+        </div>
+
+        <!--<<<<<<<<<<<<<<<<<<<<<<<<<< seccion de video <<<<<<<<<<<<<<<<<<<-->
+        <section class="hero">
+            <video class="videoInicio videoInicioRP" muted autoplay loop>
+                <source src="../prueba/Valorant_20s.mp4">
+            </video>
+            <div class="prueba2 prueba2RP position-absolute">
+                <img class="position-absolute " src="./imagenes/logoSinFondo.png" alt="">
+            </div>
+            <div class="position-absolute prueba3 prueba3RP">
+                <h2 >
+                    Bienvenido a la interfaz de Valorant por favor selecciona que deseas ver
+                </h2>
+            </div>
+            <div class="position-absolute prueba4 prueba4RP">
+                <button class="btn btn-danger m-3">
+                    agents
+                </button>
+                <button class="btn btn-danger m-3">
+                    agents
+                </button>
+                <button class="btn btn-danger m-3">
+                    agents
+                </button>
+                <button class="btn btn-danger m-3">
+                    agents
+                </button>
+                <button class="btn btn-danger m-3">
+                    agents
+                </button>
+            </div>
+            
+            
+
+            <div class="capa"></div>
+
+        </section>
+
         <section>
             <table class="table">
                 <tbody>
@@ -187,7 +268,6 @@
         </section>
 
     </main>
-
 
 
 
