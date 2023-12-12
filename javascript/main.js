@@ -16,14 +16,14 @@ const app = createApp({
         return{
             agents:  [],
             maps: [],
-            weapons: []
+            weapons: [],
         }
     },
 
     created(){
         this.getDataAgents(urlAgentes)
         this.getDataMaps(urlMapas)
-        this.getDataWeapons(urlBlundles)
+        this.getDataWeapons(Urlcompetitivo)
     },
 
     methods: {
@@ -41,7 +41,7 @@ const app = createApp({
         },
         getDataWeapons(url){
             fetch(url).then(response => response.json()).then(data => {
-                this.weapons = data.data
+                this.weapons = (data.data[0].tiers).filter((events => events.largeIcon != null))
                 console.log(this.weapons)
             })
         },
