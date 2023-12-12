@@ -8,11 +8,50 @@ let urlBuddies = "https://valorant-api.com/v1/buddies"
 let urlBlundles = "https://valorant-api.com/v1/bundles"
 let Urlcompetitivo = "https://valorant-api.com/v1/competitivetiers"
 
-// const {createApp} = Vue
 
-// const app = createApp({
+const {createApp}=Vue
 
-// })
+const app = createApp({
+    data(){
+        return{
+            agents:  [],
+            maps: [],
+            weapons: []
+        }
+    },
+
+    created(){
+        this.getDataAgents(urlAgentes)
+        this.getDataMaps(urlMapas)
+        this.getDataWeapons(urlBlundles)
+    },
+
+    methods: {
+        getDataAgents(url){
+            fetch(url).then(response => response.json()).then(data => {
+                this.agents = data.data.filter(events => events.isPlayableCharacter == true)
+                console.log(this.agents)
+            })
+        },
+        getDataMaps(url){
+            fetch(url).then(response => response.json()).then(data => {
+                this.maps = data.data.filter(events => events.narrativeDescription != null)
+                console.log(this.maps)
+            })
+        },
+        getDataWeapons(url){
+            fetch(url).then(response => response.json()).then(data => {
+                this.weapons = data.data
+                console.log(this.weapons)
+            })
+        },
+    },
+
+    computed: {
+
+    }
+
+}).mount('#app')
 
 // // let urlPrueba = "https://dash.valorant-api.com/"
 // boton1.addEventListener("click", e => {
@@ -68,59 +107,59 @@ let Urlcompetitivo = "https://valorant-api.com/v1/competitivetiers"
 //             }
 //         })
 // })
-    fetch(urlAgentes)
-        .then(response => response.json())
-        .then(data => {
+    // fetch(urlAgentes)
+    //     .then(response => response.json())
+    //     .then(data => {
 
-            console.log(data)
+    //         console.log(data)
 
-            // let miData = data.data
-            // let miData = data.data.filter(events=> events.fullIcon != null)
+    //         // let miData = data.data
+    //         // let miData = data.data.filter(events=> events.fullIcon != null)
 
-            //Filtrado para los mapas sin descripcion
-            // let miData = data.data.filter( events=> events.narrativeDescription !=null)
+    //         //Filtrado para los mapas sin descripcion
+    //         // let miData = data.data.filter( events=> events.narrativeDescription !=null)
 
-            //Filtro para los agentes, Sova repetido.
-            let miData = data.data.filter(events => events.isPlayableCharacter == true)
+    //         //Filtro para los agentes, Sova repetido.
+    //         let miData = data.data.filter(events => events.isPlayableCharacter == true)
 
-            console.log(miData)
-            let sectionCardAgents = document.getElementById("cardAgents")
+    //         console.log(miData)
+    //         let sectionCardAgents = document.getElementById("cardAgents")
 
 
-            crearTarjetas(miData)
+    //         crearTarjetas(miData)
 
-            function crearTarjetas(array) {
-                sectionCardAgents.innerHTML = ""
+    //         function crearTarjetas(array) {
+    //             sectionCardAgents.innerHTML = ""
 
-                for (let i = 0; i < array.length; i++) {
-                    if (array[i] != undefined) {
-                        let card = document.createElement("div")
-                        card.classList.add("card", "m-3")
-                                    card.innerHTML = `<div class="face Front">
+    //             for (let i = 0; i < array.length; i++) {
+    //                 if (array[i] != undefined) {
+    //                     let card = document.createElement("div")
+    //                     card.classList.add("card", "m-3")
+    //                                 card.innerHTML = `<div class="face Front">
 
-                                    <img class="imagenPruebaCards" src="${array[i].displayIcon}" alt="${array[i].displayName}">
-                                    <h3>${array[i].displayName} </h3>
+    //                                 <img class="imagenPruebaCards" src="${array[i].displayIcon}" alt="${array[i].displayName}">
+    //                                 <h3>${array[i].displayName} </h3>
                     
-                                </div>
-                                <div class="face Back">
-                                    <h3>${(array[i].displayName).toUpperCase()}</h3>
+    //                             </div>
+    //                             <div class="face Back">
+    //                                 <h3>${(array[i].displayName).toUpperCase()}</h3>
                     
-                                    <p>${array[i].description}</p>
-                                    <div class="linkSage">
-                                        <a href="../html/details.html">MORE DETAILS</a>
+    //                                 <p>${array[i].description}</p>
+    //                                 <div class="linkSage">
+    //                                     <a href="../html/details.html">MORE DETAILS</a>
                     
-                                    </div>
-                                </div>`
+    //                                 </div>
+    //                             </div>`
 
-                        //                 card.innerHTML = `<a class="mb-5" href ="#">
-                        // <img class="mb-2" src= "${array[i].displayIcon}">
-                        // <h5 class="text-center">${array[i].displayName}</h5> 
-                        // </a>`
-                        sectionCardAgents.appendChild(card)
-                    }
-                }
-            }
-        })
+    //                     //                 card.innerHTML = `<a class="mb-5" href ="#">
+    //                     // <img class="mb-2" src= "${array[i].displayIcon}">
+    //                     // <h5 class="text-center">${array[i].displayName}</h5> 
+    //                     // </a>`
+    //                     sectionCardAgents.appendChild(card)
+    //                 }
+    //             }
+    //         }
+    //     })
 
 // boton4.addEventListener("click", e => {
 //     informacion1.innerHTML = ""
