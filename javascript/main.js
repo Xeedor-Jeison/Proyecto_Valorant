@@ -8,8 +8,11 @@ let urlBuddies = "https://valorant-api.com/v1/buddies"
 let urlBlundles = "https://valorant-api.com/v1/bundles"
 let Urlcompetitivo = "https://valorant-api.com/v1/competitivetiers"
 
-let urlPrueba = "https://latam.api.riotgames.com/val/content/v1/contents/playerCards	"
+// const {createApp} = Vue
 
+// const app = createApp({
+
+// })
 
 // // let urlPrueba = "https://dash.valorant-api.com/"
 // boton1.addEventListener("click", e => {

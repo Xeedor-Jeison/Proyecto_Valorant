@@ -14,59 +14,63 @@
 <!-- <!///////////////////////////body////////////////////////// -->
 
 <body>
-    <!-- <<<<<<<<<<<<<<<<<<<<< barra inicial<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>> -->
-    <div class="fondo-bg position-sticky top-0">
-        <nav class="navbar">
-            <div class="d-flex align-items-center">
+    <header>
+        <!-- <<<<<<<<<<<<<<<<<<<<< barra inicial<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>> -->
+        <div class="fondo-bg position-sticky top-0">
+            <nav class="navbar">
+                <div class="d-flex align-items-center">
 
-                <a class="navbar-brand p-1 text-danger fs-1 w-25 " href="#">
-                    <img src="./imagenes/logoFinalValorant.png" class="img-fluid " alt="Logo">
+                    <a class="navbar-brand p-1 text-danger fs-1 w-25 " href="#">
+                        <img src="./imagenes/logoFinalValorant.png" class="img-fluid " alt="Logo">
 
 
-                </a>
+                    </a>
 
-                <div class="linkAgenteMaps">
-                    <a href="#"> AGENTS </a>
-                    <a href="#"> MAPS</a>
+                    <div class="linkAgenteMaps">
+                        <a href="#"> AGENTS </a>
+                        <a href="#"> MAPS</a>
 
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <!-- <<<<<<<<<<<<<<<<<sidebar - barra lateral>>>>>>> -->
+
+
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+
+        </button>
+
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                    images,
+                    lists, etc.
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                 </div>
             </div>
-
-        </nav>
-    </div>
-    <!-- <<<<<<<<<<<<<<<<<sidebar - barra lateral>>>>>>> -->
-
-
-
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-        aria-controls="offcanvasExample">
-      
-    </button>
-
-    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
-                lists, etc.
-            </div>
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<checkbox>>>>>>>>>>>>>>>>>>>>>>>>< -->
+    </header>
+<main id="app">
+  <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<checkbox>>>>>>>>>>>>>>>>>>>>>>>>< -->
 
     <div class="checkbox d-flex">
         <div class="form-check form-switch d-flex   ">
@@ -84,7 +88,7 @@
     <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards players>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     <section id="cardAgents" class="seccionCartas  m-5 d-flex justify-content-center align-items-center flex-wrap">
         <div class="card m-3 ">
-            
+
         </div>
 
     </section>
@@ -187,6 +191,8 @@
 
         </div>
     </section>
+</main>
+  
 
 
 
