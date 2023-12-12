@@ -1,18 +1,10 @@
- *{
-  margin: 0;
-  padding: 0;
-  
+ * {
+   margin: 0;
+   padding: 0;
+
  }
- 
- 
 
-<<<<<<< HEAD
-=======
-.ensayo{
-    max-width: 100%;
-}*/
 
->>>>>>> cdd50d4195c932bfe3145c0873bb18bcbc83f656
  body {
    background-color: #16b199;
    /* background-color: #000; */
@@ -24,9 +16,6 @@
    background-color: #000000;
  }
 
-
-
- /* <<<<<<<<<<<<<<<<<<<<<<<<<<<cardsMaps>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
  .card {
@@ -97,7 +86,8 @@
    flex-direction: column;
    justify-content: space-between;
    text-align: justify;
-   color:  #3be0c3;;
+   color: #3be0c3;
+   ;
    text-align: center;
    text-decoration: none;
    font-size: larger;
@@ -124,7 +114,7 @@
  }
 
 
-/* <<<<<<<<<<<<<<<<<<<<<< STYLE MAPS CARDS <<<<<<<<<<<<<<<<<<< */
+ /* <<<<<<<<<<<<<<<<<<<<<< STYLE MAPS CARDS <<<<<<<<<<<<<<<<<<< */
 
  .cardsMaps {
 
@@ -200,16 +190,17 @@
    text-decoration: none;
    font-size: larger;
  }
- .cardsMaps .Back  a {
-  position: absolute;
-  bottom: 5px;
-  width: 96%;
-  height: 45px;
-  color: #3be0c3;
-  background-color: rgba(0, 0, 0, 0.4);
-  text-align: center;
-  border-radius: 20px;
-}
+
+ .cardsMaps .Back a {
+   position: absolute;
+   bottom: 5px;
+   width: 96%;
+   height: 45px;
+   color: #3be0c3;
+   background-color: rgba(0, 0, 0, 0.4);
+   text-align: center;
+   border-radius: 20px;
+ }
 
  .cardsMaps .Back h2 {
    color: #3be0c3;
@@ -232,266 +223,537 @@
 
 
 
-/* <<<<<<<<<<<<<<<<<<<<<< STYLE MAPS CARDS <<<<<<<<<<<<<<<<<<< */
+ /* <<<<<<<<<<<<<<<<<<<<<< STYLE MAPS CARDS <<<<<<<<<<<<<<<<<<< */
 
-.cardsWeapon {
+ .cardsWeapon {
 
-  border: #515384;
-  border-radius: 50px;
-  position: relative;
-  width: 900px;
-  height: 400px;
-  background-color: #3D3E59;
+   border: #515384;
+   border-radius: 50px;
+   position: relative;
+   width: 900px;
+   height: 400px;
+   background-color: #3D3E59;
 
-}
+ }
 
-.cardsWeapon .face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 1s;
-  background-color: #000;
+ .cardsWeapon .face {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   border-radius: 10px;
+   overflow: hidden;
+   transition: 1s;
+   background-color: #000;
 
-}
+ }
 
-.cardsWeapon .Front {
-  transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 5px 10px #000;
-}
+ .cardsWeapon .Front {
+   transform: perspective(600px) rotateY(0deg);
+   box-shadow: 0 5px 10px #000;
+ }
 
-.cardsWeapon .Front img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+ .cardsWeapon .Front img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
 
-.cardsWeapon .Front h3 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 45px;
-  line-height: 45px;
-  color: crimson;
-  background-color: rgba(0, 0, 0, 0.9);
-  text-align: center;
-}
+ .cardsWeapon .Front h3 {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 45px;
+   line-height: 45px;
+   color: crimson;
+   background-color: rgba(0, 0, 0, 0.9);
+   text-align: center;
+ }
 
-.cardsWeapon .Back {
-  transform: perspective(600px) rotateY(180deg);
-  background: #707070;
-  padding: 15px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: justify;
-  box-shadow: 0, 5px 10px #000000;
-}
+ .cardsWeapon .Back {
+   transform: perspective(600px) rotateY(180deg);
+   background: #707070;
+   padding: 15px;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: justify;
+   box-shadow: 0, 5px 10px #000000;
+ }
 
-.cardsWeapon .Back .linkSage {
-  border-top: solid 1px white;
-  height: 50px;
-  line-height: 50px;
-}
+ .cardsWeapon .Back .linkSage {
+   border-top: solid 1px white;
+   height: 50px;
+   line-height: 50px;
+ }
 
-.cardsWeapon .Back .linkSage a {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: justify;
-  color: #f12;
-  text-align: center;
-  text-decoration: none;
-  font-size: larger;
-}
+ .cardsWeapon .Back .linkSage a {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: justify;
+   color: #f12;
+   text-align: center;
+   text-decoration: none;
+   font-size: larger;
+ }
 
-.cardsWeapon .Back h3 {
-  color: #ff4655;
-  margin-top: 20px;
-  letter-spacing: 2px;
-  text-align: center;
-}
+ .cardsWeapon .Back h3 {
+   color: #ff4655;
+   margin-top: 20px;
+   letter-spacing: 2px;
+   text-align: center;
+ }
 
-.cardsWeapon .Back p {
-  letter-spacing: 1px;
-}
+ .cardsWeapon .Back p {
+   letter-spacing: 1px;
+ }
 
-.cardsWeapon:hover .Front {
-  transform: perspective(600px) rotateY(180deg);
-}
+ .cardsWeapon:hover .Front {
+   transform: perspective(600px) rotateY(180deg);
+ }
 
-.cardsWeapon:hover .Back {
-  transform: perspective(600px) rotateY(360deg);
-}
+ .cardsWeapon:hover .Back {
+   transform: perspective(600px) rotateY(360deg);
+ }
 
 
-.style{
-  height: 90vh;
-}
+ .style {
+   height: 90vh;
+ }
 
-.btn{
-  padding: 8px 20px;
-  width: 200px;
-  height: 50px;
-  color: #fff;
-  font-weight: 700px;
-  border-radius: 0;
-  text-transform: uppercase;
-  margin: 25px;
-  overflow: hidden;
-  position: relative;
-}
+ .btn {
+   padding: 8px 20px;
+   width: 200px;
+   height: 50px;
+   color: #fff;
+   font-weight: 700px;
+   border-radius: 0;
+   text-transform: uppercase;
+   margin: 25px;
+   overflow: hidden;
+   position: relative;
+ }
 
-.btn::before{
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg,transparent,red,transparent);
-  transform: translateX(-100%);
-  transition: 0.6s;
-  position: absolute;
-}
+ .btn::before {
+   content: "";
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(120deg, transparent, red, transparent);
+   transform: translateX(-100%);
+   transition: 0.6s;
+   position: absolute;
+ }
 
-.btn:hover{
-  background: transparent;
-  box-shadow: 0 0 20px 5px #00fffc;
-}
+ .btn:hover {
+   background: transparent;
+   box-shadow: 0 0 20px 5px #00fffc;
+ }
 
  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<card iconos<<<<<<<<<<<< */
 
-.cardIconosSinLink {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-  border: 2px solid #f12;
-  border-radius: 15px;
-  width: 15vw;
-  height: 15vw;
-}
-.imageIconos {
-  width: 10vw;
-  height: 10vw;
-}
-.cardIconosConLink {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../html/imagenes/fondo\ icono\ valorant.jpg);
+ .cardIconosSinLink {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #000;
+   border: 2px solid #f12;
+   border-radius: 15px;
+   width: 15vw;
+   height: 15vw;
+ }
 
-  width: 15vw;
-  height: 15vw;
-}
+ .imageIconos {
+   width: 10vw;
+   height: 10vw;
+ }
 
+ .cardIconosConLink {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url(../html/imagenes/fondo\ icono\ valorant.jpg);
 
-.linkIconos {
-  margin: 5px;
-  text-align: center;
- 
- 
-}
+   width: 15vw;
+   height: 15vw;
+ }
 
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<  style video <<<<<<<<<<<<<<<<<<<<<<<<< */
+ .linkIconos {
+   margin: 5px;
+   text-align: center;
 
-.videoInicio{
-  position: absolute;
-  width: 100%;
-  
-}
-.hero{
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: hidden;
-}
 
-.prueba{
-  width: 100%;
-  height: 100%;
+ }
 
-}
-.capa{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #1c1c1d;
-  opacity: 0.7;
-  z-index: 50;
-}
 
-.prueba2{
-  top: 100px;
-  left: 150px;
-  z-index: 100;
-}
+ /* <<<<<<<<<<<<<<<<<<<<<<<<  style video <<<<<<<<<<<<<<<<<<<<<<<<< */
 
-.prueba3{
-  position: absolute;
-  z-index: 150;
-  color: #fff;
-  top: 380px;
-  left: 150px;
-}
+ .videoInicio {
+   position: absolute;
+   width: 100%;
 
-.prueba4{
-  position: absolute;
-  top: 500px;
-  left: 80px;
-  z-index: 200;
-}
+ }
 
-@media only screen and (min-width: 359px) and (max-width:769px){
-  .videoInicioRP{
+ .hero {
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+   overflow-y: hidden;
+ }
+
+ .prueba {
+   width: 100%;
+   height: 100%;
+
+ }
+
+ .capa {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #1c1c1d;
+   opacity: 0.7;
+   z-index: 50;
+ }
+
+ .prueba2 {
+   top: 100px;
+   left: 150px;
+   z-index: 100;
+ }
+
+ .prueba3 {
+   position: absolute;
+   z-index: 150;
+   color: #fff;
+   top: 380px;
+   left: 150px;
+ }
+
+ .prueba4 {
+   position: absolute;
+   top: 500px;
+   left: 80px;
+   z-index: 200;
+ }
+
+ @media only screen and (min-width: 359px) and (max-width:767px) {
+   .videoInicioRP {
+     position: absolute;
+     height: 100%;
+     top: 0;
+     object-fit: cover;
+   }
+
+   .hero {
+     position: relative;
+     width: 100vw;
+     height: 100vh;
+     overflow-y: hidden;
+     overflow-x: hidden;
+   }
+
+
+   .prueba2RP {
+     top: 100px;
+     left: 150px;
+     z-index: 100;
+   }
+
+   .prueba2RP img {
+     width: 350px;
+     left: -150px;
+   }
+
+   .prueba3RP {
+     z-index: 150;
+     color: #fff;
+     top: 380px;
+     left: 150px;
+   }
+
+   .prueba3RP>h2 {
+     position: absolute;
+     text-align: center;
+     width: 250px;
+     left: -70px;
+     top: -80px;
+
+   }
+
+   .prueba4RP {
+     position: absolute;
+     top: 500px;
+     left: 80px;
+     z-index: 200;
+   }
+ }
+
+ @media only screen and (min-width: 768px) and (max-width:1023px) {
+   .videoInicioRP {
+     position: absolute;
+     height: 100%;
+     top: 0;
+     object-fit: cover;
+   }
+
+   .hero {
+     position: relative;
+     width: 100vw;
+     height: 100vh;
+     overflow-y: hidden;
+     overflow-x: hidden;
+   }
+
+
+   .prueba2RP {
+     top: 250px;
+     left: 150px;
+     z-index: 100;
+   }
+
+   .prueba2RP img {
+     width: 500px;
+     left:  50%;
+   }
+
+   .prueba3RP {
+     z-index: 150;
+     color: #fff;
+     top: 480px;
+     left: 50%;
+   }
+
+   .prueba3RP>h2 {
+     position: absolute;
+     text-align: center;
+     width: 250px;
+     left: -90px;
+     top: -80px;
+
+   }
+
+   .prueba4RP {
+     position: absolute;
+     top: 650px;
+     left: 180px;
+     z-index: 200;
+   }
+
+ }
+
+ @media only screen and (min-width: 1024px) and (max-width:1024px) {
+  .videoInicioRP {
     position: absolute;
     height: 100%;
     top: 0;
     object-fit: cover;
   }
-  .hero{
+
+  .hero {
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
   }
-  
-  
-  .prueba2RP{
-    top: 100px;
-    left: 150px;
+
+
+  .prueba2RP {
+    top: 250px;
+    left: 100px;
     z-index: 100;
   }
-  .prueba2RP img{
-    width: 350px;
-    left: -150px;
+
+  .prueba2RP img {
+    width: 800px;
+    left:  50%;
   }
-  .prueba3RP{
+
+  .prueba3RP {
     z-index: 150;
     color: #fff;
-    top: 380px;
-    left: 150px;
+    top: 600px;
+    left: 50%;
   }
-.prueba3RP>h2{
-  position: absolute;
-  text-align: center;
-  width: 250px;
-  left: -70px;
-  top: -80px;
-  
-}
-  .prueba4RP{
+
+  .prueba3RP>h2 {
     position: absolute;
-    top: 500px;
-    left: 80px;
+    text-align: center;
+    width: 300px;
+    left: -150px;
+    top: -80px;
+
+  }
+
+  .prueba4RP {
+    position: absolute;
+    top: 800px;
+    left: 290px;
     z-index: 200;
   }
+
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px)  and (max-height:600px)  {
+  .videoInicioRP {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+
+  .prueba2RP {
+    top: 50px;
+    left: 100px;
+    z-index: 100;
+  }
+
+  .prueba2RP img {
+    width: 800px;
+    left:  50%;
+  }
+
+  .prueba3RP {
+    z-index: 150;
+    color: #fff;
+    top: 350px;
+    left: 50%;
+  }
+
+  .prueba3RP>h2 {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    left: -150px;
+    top: -80px;
+
+  }
+
+  .prueba4RP {
+    position: absolute;
+    top: 450px;
+    left: 290px;
+    z-index: 200;
+  }
+
+}
+@media only screen and (min-width: 1280px)  {
+  .videoInicioRP {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+
+  .prueba2RP {
+    top: 100px;
+    left: 250px;
+    z-index: 100;
+  }
+
+  .prueba2RP img {
+    width: 800px;
+    left:  50%;
+  }
+
+  .prueba3RP {
+    z-index: 150;
+    color: #fff;
+    top: 400px;
+    left: 50%;
+  }
+
+  .prueba3RP>h2 {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    left: -120px;
+    top: -80px;
+
+  }
+
+  .prueba4RP {
+    position: absolute;
+    top: 550px;
+    left: 420px;
+    z-index: 200;
+  }
+
+}
+@media only screen and (min-width: 1290px)  {
+  .videoInicioRP {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+
+  .prueba2RP {
+    top: 100px;
+    left: 550px;
+    z-index: 100;
+  }
+
+  .prueba2RP img {
+    width: 800px;
+    left:  50%;
+  }
+
+  .prueba3RP {
+    z-index: 150;
+    color: #fff;
+    top: 500px;
+    left: 50%;
+  }
+
+  .prueba3RP>h2 {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    left: -120px;
+    top: -80px;
+
+  }
+
+  .prueba4RP {
+    position: absolute;
+    top: 750px;
+    left: 720px;
+    z-index: 200;
+  }
+
 }

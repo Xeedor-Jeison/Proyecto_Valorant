@@ -17,32 +17,33 @@
 <body>
 
 
-    <!-- <header class="position-sticky top-0 z-1"> -->
+
     <!-- <<<<<<<<<<<<<<<<<<<<< barra inicial<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>> -->
-    <!-- <div class="fondo-bg">
+    <header id="cabecera" class="position-sticky top-0 z-1 d-none">
+        <div class="fondo-bg">
             <nav class="navbar">
                 <div class="d-flex align-items-center">
 
-                    <a class="navbar-brand p-1 text-danger fs-1 w-25 " href="#">
+                    <a class="navbar-brand p-1 text-danger fs-1 w-25 " href="index.html">
                         <img src="./imagenes/logoFinalValorant.png" class="img-fluid " alt="Logo">
-
 
                     </a>
 
                     <div class="linkAgenteMaps">
-                        <a href="#"> AGENTS </a>
-                        <a href="#"> MAPS</a>
+                        <a  id="botonAgentesAncord" class="btn btn-danger" href="#"> AGENTS </a>
+                        <a  id="botonMapasAncord" class="btn btn-danger" href="#"> MAPS</a>
 
                     </div>
                 </div>
 
             </nav>
-        </div> -->
-    <!-- <<<<<<<<<<<<<<<<<sidebar - barra lateral>>>>>>> -->
+        </div>
+    </header>
+        <!-- <<<<<<<<<<<<<<<<<sidebar - barra lateral>>>>>>> -->
 
 
 
-    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
             aria-controls="offcanvasExample">
 
         </button>
@@ -70,14 +71,14 @@
                     </ul>
                 </div>
             </div>
-        </div> -->
-    </header>
+        </div> 
+    
 
-    <main id="app">
-        <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<checkbox>>>>>>>>>>>>>>>>>>>>>>>>< -->
+        
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<checkbox>>>>>>>>>>>>>>>>>>>>>>>>< 
 
 
-        <!-- <nav class="container navbar navbar-expand-lg bg-withe">
+             <nav class="container navbar navbar-expand-lg bg-withe">
 
             <div class="container navbar-collapse d-flex justify-content-between pt-2" id="navbarNavDropdown">
                 <div class="form-check form-switch">
@@ -109,54 +110,55 @@
 
 
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards players>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-        <section id="cardAgents"
-            class="seccionCartas  m-5 d-flex justify-content-center align-items-center flex-wrap">
-            <div v-for="agent in agents" class="card m-3 ">
-                <div class="face Front">
+            <main id="app">
+            <section id="cardAgents"
+                class="seccionCartas d-none m-5 d-flex justify-content-center align-items-center flex-wrap">
+                <div v-for="agent in agents" class="card m-3 ">
+                    <div class="face Front">
 
-                    <img class="imagenPruebaCards" :src="agent.displayIcon" alt={{agent.displayName}}>
-                    <h3>{{agent.displayName}} </h3>
-
-                </div>
-                <div class="face Back">
-                    <h3>{{agent.displayName.toUpperCase()}}</h3>
-
-                    <p>{{agent.description}}</p>
-                    <div class="linkSage">
-                        <a href="../html/details.html">MORE DETAILS</a>
+                        <img class="imagenPruebaCards" :src="agent.displayIcon" alt={{agent.displayName}}>
+                        <h3>{{agent.displayName}} </h3>
 
                     </div>
-                </div>
-            </div>
+                    <div class="face Back">
+                        <h3>{{agent.displayName.toUpperCase()}}</h3>
 
-        </section> 
+                        <p>{{agent.description}}</p>
+                        <div class="linkSage">
+                            <a href="../html/details.html">MORE DETAILS</a>
 
-
-        <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards mapas>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-        <section id="cardMaps"
-            class="seccionCartas m-5 d-flex justify-content-center align-items-center flex-wrap  ">
-
-            <div v-for="map in maps" class="cardsMaps m-3 ">
-                <div class="face Front">
-
-                    <img class="imagenPruebaCards" :src="map.splash" alt={{map.displayName}}>
-                    <h3>{{map.displayName}}</h3>
-
-                </div>
-                <div class="face Back">
-                    <h2>{{map.displayName}}</h2>
-
-                    <p>{{map.narrativeDescription}}</p>
-                    <div class="linkSage">
-                        <a href="#">MORE DETAILS</a>
-
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </section> 
+            </section>
 
-        <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<otra seccion >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+            <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards mapas>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+            <section id="cardMaps"
+                class="seccionCartas d-none m-5 d-flex justify-content-center align-items-center flex-wrap  ">
+
+                <div v-for="map in maps" class="cardsMaps m-3 ">
+                    <div class="face Front">
+
+                        <img class="imagenPruebaCards" :src="map.splash" alt={{map.displayName}}>
+                        <h3>{{map.displayName}}</h3>
+
+                    </div>
+                    <div class="face Back">
+                        <h2>{{map.displayName}}</h2>
+
+                        <p>{{map.narrativeDescription}}</p>
+                        <div class="linkSage">
+                            <a href="#">MORE DETAILS</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<otra seccion >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         <h2 text-center>Armas</h2>
         <section class="seccionCartas   m-5 d-flex justify-content-center align-items-center flex-wrap  ">
 
@@ -180,107 +182,65 @@
 
         </section> -->
 
-        <!-- <section id="principal">
 
-            <div class="style ">
-                <img src="../html/imagenes/logoSinFondo.png" class="" alt="logo Valorant">
-                <div class="d-flex align-items-center justify-content-center">
-                    <button class="buttonAgents btn">Agents</button>
-                    <button class="buttonMaps m-2 p-2">Maps</button>
+            <!--<<<<<<<<<<<<<<<<<<<<<<<<<< seccion de video <<<<<<<<<<<<<<<<<<<-->
+            <section id="videoPrincipal" class="hero ">
+                <video class="videoInicio videoInicioRP" muted autoplay loop>
+                    <source src="../prueba/Valorant_20s.mp4">
+                </video>
+                <div class="prueba2 prueba2RP position-absolute">
+                    <img class="position-absolute " src="./imagenes/logoSinFondo.png" alt="">
+                </div>
+                <div class="position-absolute prueba3 prueba3RP">
+                    <h2>
+                        Bienvenido a la interfaz de Valorant por favor selecciona que deseas ver
+                    </h2>
+                </div>
+                <div class="position-absolute prueba4 prueba4RP">
+                    <button  id="botonAgentes" class="btn btn-danger m-3">
+                        AGENTS
+                    </button>
+                    <button  id="botonMapas" class="btn btn-danger m-3">
+                        MAPS
+                    </button>
+                  
                 </div>
 
-            </div>
 
-        </section> -->
 
-        <!-- <<>>>>>>>>>>>>>>>>>>>>> Iconos de seleccion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-        <!-- <div class="cardIconosSinLink">
-        <div class="">
-            <img  src="./imagenes/icono radiant valorant.png" class="imageIconos" alt="...">         
+                <div class="capa"></div>
 
-        </div>
-    </div> -->
+            </section>
 
-        <!-- >>>>>>>>>>>>>>>>>>> >CARD CON TEXTO EN ICONOS >>>>>>>>>>><<<<<<<<<<<>>>>>< -->
-        <!-- <div class="prueba  position-relative d-flex justify-content-center align-items-start">
-            <img class="position-absolute z-1" src="./imagenes/logoSinFondo.png" alt="">
-        </div> -->
-        
-        <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cards players>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-        <div id="cardAgents"
-            class="seccionCartas  d-none m-5 d-flex justify-content-center align-items-center flex-wrap">
-            <div class="card m-3 ">
+            <section class="d-none">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Divison</th>
+                            <th>Icon</th>
+                        </tr>
+                        <tr v-for="data in weapons">
+                            <td>{{data.tierName}}</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-            </div>
-
-        </div>
-
-        <!--<<<<<<<<<<<<<<<<<<<<<<<<<< seccion de video <<<<<<<<<<<<<<<<<<<-->
-        <section class="hero">
-            <video class="videoInicio videoInicioRP" muted autoplay loop>
-                <source src="../prueba/Valorant_20s.mp4">
-            </video>
-            <div class="prueba2 prueba2RP position-absolute">
-                <img class="position-absolute " src="./imagenes/logoSinFondo.png" alt="">
-            </div>
-            <div class="position-absolute prueba3 prueba3RP">
-                <h2 >
-                    Bienvenido a la interfaz de Valorant por favor selecciona que deseas ver
-                </h2>
-            </div>
-            <div class="position-absolute prueba4 prueba4RP">
-                <button class="btn btn-danger m-3">
-                    agents
-                </button>
-                <button class="btn btn-danger m-3">
-                    agents
-                </button>
-                <button class="btn btn-danger m-3">
-                    agents
-                </button>
-                <button class="btn btn-danger m-3">
-                    agents
-                </button>
-                <button class="btn btn-danger m-3">
-                    agents
-                </button>
-            </div>
-            
-            
-
-            <div class="capa"></div>
-
-        </section>
-
-        <section>
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <th>Divison</th>
-                        <th>Icon</th>
-                    </tr>
-                    <tr v-for="data in weapons">
-                        <td>{{data.tierName}}</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-    </main>
+        </main>
 
 
 
-    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>scripts<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-    <script src="../Modulos/funciones.js" type="module"></script>
-    <script src="../Modulos/variables.js" type="module"></script>
-    <script src="../javascript/main.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>scripts<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <script src="../Modulos/funciones.js" type="module"></script>
+        <script src="../Modulos/variables.js" type="module"></script>
+        <script src="../javascript/main.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
