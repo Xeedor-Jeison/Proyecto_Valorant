@@ -17,6 +17,8 @@ const app = createApp({
             agents: [],
             maps: [],
             weapons: [],
+            roles: [],
+            descriptionRoles: []
         }
     },
 
@@ -30,7 +32,11 @@ const app = createApp({
         getDataAgents(url) {
             fetch(url).then(response => response.json()).then(data => {
                 this.agents = data.data.filter(events => events.isPlayableCharacter == true)
+                this.roles = Array.from(new Set(this.agents.map(events => events.role.displayName)))
+                this.descriptionRoles = Array.from(new Set(this.agents.map(events => events.role.description)))
                 console.log(this.agents)
+                console.log(this.roles)
+                console.log(this.descriptionRoles)
             })
         },
         getDataMaps(url) {

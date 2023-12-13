@@ -74,11 +74,6 @@
         </div> 
     
 
-        
-             <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<checkbox>>>>>>>>>>>>>>>>>>>>>>>>< 
-
-
-             <nav class="container navbar navbar-expand-lg bg-withe">
 
             <div class="container navbar-collapse d-flex justify-content-between pt-2" id="navbarNavDropdown">
                 <div class="form-check form-switch">
@@ -104,7 +99,7 @@
                 <div>
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </div>
-            </div>
+            </div>  
 
         </div>
 
@@ -125,7 +120,7 @@
 
                         <p>{{agent.description}}</p>
                         <div class="linkSage">
-                            <a href="../html/details.html">MORE DETAILS</a>
+                            <a :href="'../html/details.html?uuid='+agent.uuid">MORE DETAILS</a>
 
                         </div>
                     </div>
@@ -150,7 +145,7 @@
 
                         <p>{{map.narrativeDescription}}</p>
                         <div class="linkSage">
-                            <a href="#">MORE DETAILS</a>
+                            <a :href="'../html/details.html?uuid='+map.uuid">MORE DETAILS</a>
 
                         </div>
                     </div>

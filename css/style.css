@@ -369,6 +369,7 @@
 
  .btn:hover {
    background: transparent;
+   color:#fff;
    box-shadow: 0 0 20px 5px #00fffc;
  }
 
@@ -723,7 +724,7 @@
   }
 
 }
-@media only screen and (min-width: 1290px)  {
+@media only screen and (min-width: 1400px)  {
   .videoInicioRP {
     position: absolute;
     height: 100%;
@@ -818,7 +819,7 @@ a {
 .detailsLetters {
     font-size: 7rem;
     -webkit-text-fill-color: rgba(255, 255, 255, 0.096);
-    /* Will override color (regardless of order) */
+    /* Will override color (regardless of order) 
     -webkit-text-stroke: 2px white;
 }
 

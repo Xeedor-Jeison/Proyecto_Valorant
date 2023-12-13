@@ -9,11 +9,12 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
     <!-- <<<<<<<<<<<<<<<<<<<<<Barra Inicial>>>>>>>>>>>>>> -->
-    <header>
+    <!-- <header>
         <div class="fondo-bg position-sticky top-0">
             <nav class="navbar">
                 <div class="d-flex align-items-center">
@@ -27,58 +28,66 @@
                 </div>
             </nav>
         </div>
-    </header>
+    </header> -->
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BOTÓN HOME<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
     <main>
-        <div>
-            <a class="aHome" href="../html/index.html">
+        <div class="d-inline">
+            <a class="aHome d-inline" href="../html/index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="colorButtonBack"
                     class="bi bi-caret-left-fill" viewBox="0 0 16 16">
                     <path
                         d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
                 </svg>
-                <p class="buttonHome">Go to HOME</p>
+                <p class="buttonHome d-inline">Go to HOME</p>
             </a>
         </div>
 
         <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Contenido Details Agentes<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-        <div class="detailsAgentes positionDetails">
+        <div id="divAgentsDetails" class="detailsAgentes positionDetails d-none">
             <div class="detailsContent">
                 <div class="agentGuide">
                     <h2 id="g1" class="detailsLetters">AGENT</h2>
                     <h2 id="g2" class="detailsLetters">GUIDE</h2>
                 </div>
                 <div class="agentName">
-                    <h2 class="detailsName">OMEN</h2>
+                    <h2 id="nameAgents" class="detailsName">Nombre</h2>
                 </div>
                 <div class="descriptionDetails">
                     <h4>
-                        description:
+                        <b>description:</b>
                     </h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consequuntur et doloremque!
-                        Earum,
-                        pariatur? Totam perspiciatis maxime, itaque quia dolor doloribus, tenetur eveniet sint
-                        incidunt
-                        inventore, pariatur quis adipisci facere?
+                    <p id="descriptionAgents">
+                        description agents
+                    </p>
+                    <h4>
+                        <b>ROL:</b>
+                    </h4>
+                    <p id="rolAgents">
+                        rol agents
+                    </p>
+                    <h4>
+                        <b>DESCRIPTION ROL:</b>
+                    </h4>
+                    <p id="descriptionRol">
+                        description rol
                     </p>
                 </div>
             </div>
-            <div class="containerImg">
-                <img class="imagenDetails" src="../prueba/omen.png" alt="">
+            <div class="containerImg ">
+                <img id="imagenAgents" class="imagenDetails" src="" alt="">
             </div>
         </div>
 
         <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Contenido Details Mapas<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-        <div class="detailsMapas positionMapas">
-
+        <div id="divMapsDetails" class="detailsMapas positionMapas d-none">
+            <h2>Estoy en mapas</h2>
         </div>
     </main>
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>scripts<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
     <script src="../Modulos/funciones.js" type="module"></script>
     <script src="../Modulos/variables.js" type="module"></script>
-    <script src="../javascript/main.js" type="module"></script>
+    <script src="../javascript/details.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
